@@ -5,7 +5,7 @@ public class BagWithReciepts {
 	public class BagWithReceipts implements Cloneable
 	{
 	   // The student's private instance variables are declared here:
-
+		//jia says hi
 
 	   /**
 	   * Initialize an empty <CODE>BagWithReceipts</CODE>.
