@@ -144,6 +144,7 @@ public class BagWithReciepts implements Cloneable
 	 **/
 	public Lister iterator( )
 	{
+		
 		return null;
 	}
 
