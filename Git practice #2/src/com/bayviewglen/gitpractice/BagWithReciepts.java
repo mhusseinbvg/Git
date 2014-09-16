@@ -110,8 +110,13 @@ public class BagWithReciepts implements Cloneable
 	 **/
 	public int countOccurrences(Object target)
 	{
-		// Student implementation.
-		return 0;
+	      int numberOfOccurance;
+	      
+	      numberOfOccurance = 0;
+	      for (int i  = 0; i < item; i++)
+	         if (target == data[i])
+	        	 numberOfOccurance++;
+	      return numberOfOccurance;
 	}
 
 
