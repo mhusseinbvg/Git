@@ -255,7 +255,7 @@ public class BagWithReciepts implements Cloneable
 	 **/
 	public boolean using_receipt(int receipt)
 	{
-		// Student implementation.
+		//it will always be true	
 		return true;
 	}
 
