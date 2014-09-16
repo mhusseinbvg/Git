@@ -92,10 +92,10 @@ public class BagWithReciepts implements Cloneable
 	 *   Indicates insufficient memory for creating the clone.
 	 **/ 
 	public Object clone( )
-	{  // Clone a BagWithReceipts object.
-		// Student implementation.
-		return null;
-	}
+	{ 
+		return data.clone(); 
+		
+			}
 
 
 	/**
