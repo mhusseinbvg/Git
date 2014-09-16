@@ -242,7 +242,7 @@ public class BagWithReciepts implements Cloneable
 	 **/ 
 	public int size( )
 	{
-		// Student implementation.
+		
 		return bag.size();
 	}
 
