@@ -191,7 +191,7 @@ public class BagWithReciepts implements Cloneable
 		}
 		else{
 			objectNumbers--; 
-			bag.remove(index); 
+			bag.set(index,null); 
 			return true;
 			
 		}
@@ -256,8 +256,7 @@ public class BagWithReciepts implements Cloneable
 	 **/
 	public boolean using_receipt(int receipt)
 	{
-		if(receipt<=bag.size()){
-			
+		if(receipt<=bag.size()){	
 		}
 		return true;
 	}
