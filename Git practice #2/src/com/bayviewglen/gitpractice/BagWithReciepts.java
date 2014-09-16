@@ -73,7 +73,6 @@ public class BagWithReciepts implements Cloneable
 	 **/
 	public int add(Object element)
 	{
-		if(item == bag.size())
 		return 0;
 	}
 
