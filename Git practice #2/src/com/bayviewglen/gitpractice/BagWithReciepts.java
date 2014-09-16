@@ -49,7 +49,9 @@ public class BagWithReciepts implements Cloneable
    **/   
    public BagWithReciepts( )
    {
-      // Student implementation.
+      int item; 
+      final int capacity = 20; 
+      
    }
         
  
