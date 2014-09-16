@@ -132,8 +132,18 @@ public class BagWithReciepts implements Cloneable
 	 *   <CODE>Iterator</CODE> is unspecified.
 	 **/
 	public Lister iterator( )
-	{
-		return null;
+	{	
+		Lister Iterator = null; 
+		for (int i = 0; i<data.length;i++){
+			if(data[i].hasNext()){
+				Iterator = (Lister) data[i].next(); 
+			}
+		}
+		return Iterator; 
+		
+		
+		
+	
 	}
 
 
