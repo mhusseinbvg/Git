@@ -225,8 +225,7 @@ public class BagWithReciepts implements Cloneable
 	 **/
 	public Object retrieve(int receipt)
 	{
-		// Student implementation.
-		return null;
+		return bag.get(receipt);
 	}
 
 
