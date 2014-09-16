@@ -210,7 +210,7 @@ public class BagWithReciepts implements Cloneable
 	 **/
 	public boolean remove_by_receipt(int receipt)
 	{
-		if(receipt<bag.size()){
+		if(receipt<=bag.size()){
 			bag.remove(receipt);
 
 		}
@@ -255,7 +255,9 @@ public class BagWithReciepts implements Cloneable
 	 **/
 	public boolean using_receipt(int receipt)
 	{
-		//it will always be true	
+		if(receipt<=bag.size()){
+			
+		}
 		return true;
 	}
 
