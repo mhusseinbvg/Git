@@ -1,12 +1,15 @@
 
 package com.bayviewglen.gitpractice;
 
+import java.util.ArrayList;
+
 public class BagWithReciepts {
 	public class BagWithReceipts implements Cloneable
 	{
 	   // The student's private instance variables are declared here:
 		//jia says hi
-
+		private ArrayList<Object> bag;
+		private int numOfItems;
 	   /**
 	   * Initialize an empty <CODE>BagWithReceipts</CODE>.
 	   * @param - none
@@ -15,7 +18,8 @@ public class BagWithReciepts {
 	   **/   
 	   public BagWithReceipts( )
 	   {
-	      // Student implementation.
+	      bag = new ArrayList<Object>();
+	      numOfItems = 0;
 	   }
 	        
 	 
@@ -33,8 +37,9 @@ public class BagWithReciepts {
 	   **/
 	   public int add(Object element)
 	   {
-	      // Student implementation.
-	      return 0;
+	      bag.add(element);
+	      numOfItems +=1;
+	      return numOfItems - 1;
 	   }
 	   
 	   
@@ -68,8 +73,12 @@ public class BagWithReciepts {
 	   **/
 	   public int countOccurrences(Object target)
 	   {
-	      // Student implementation.
-	      return 0;
+	      int numOfOccurence = 0;
+	      for(Object x : bag){
+	    	  if(x .equals(target))
+	    		  numOfOccurence ++;
+	      }
+	      return numOfOccurence;
 	   }
 	   
 	   
