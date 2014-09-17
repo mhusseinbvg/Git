@@ -62,7 +62,7 @@ public class BagWithReciepts implements Cloneable
 		objectNumbers = 0; 
 		List<Object> bag = new ArrayList<>(objectNumbers);
 
-		// Student implementation.
+		
 	}
 
 
@@ -243,7 +243,7 @@ public class BagWithReciepts implements Cloneable
 	 **/ 
 	public int size( )
 	{
-		// Student implementation.
+		
 		return bag.size();
 	}
 
