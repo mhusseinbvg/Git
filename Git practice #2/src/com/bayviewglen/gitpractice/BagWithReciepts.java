@@ -1,16 +1,8 @@
-
-// File: BagWithReceipts.java from the package edu.colorado.collections
-
-// This is an assignment for students who are using
-// "Data Structures and Other Objects Using Java" by Michael Main.
-
-// Check with your instructor to see whether you should put this class in
-// a package. At the moment, it is declared as part of edu.colorado.collections:
-package com.bayviewglen.gitpractice;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import com.bayviewglen.gitpractice.Lister;
 
 
 /******************************************************************************
@@ -261,6 +253,4 @@ public class BagWithReciepts implements Cloneable
 		}
 		return true;
 	}
-
-
 }
