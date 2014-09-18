@@ -34,7 +34,23 @@ public class BagWithRecieptsTest extends BagWithReciepts {
 		assertEquals("Occurences test for string:", 2, bag.countOccurrences("Jia"));
 
 		
+		bag.add(1);
+		bag.add("Hi");
+		bag.add(1);
+		assertEquals("Occurences test for int:", 2, bag.countOccurrences(1));
 		
+		bag.add("Jia");
+		bag.add("Hi");
+		bag.add("Jia");
+		assertEquals("Occurences test for string:", 2, bag.countOccurrences(null));
+		
+		bag.add("Jia");
+		bag.add("Hi");
+		bag.add("Jia");
+		assertEquals("Occurences test for nothing:", 0, bag.countOccurrences("1"));
+		
+
+
 	}
 
 	@Test
