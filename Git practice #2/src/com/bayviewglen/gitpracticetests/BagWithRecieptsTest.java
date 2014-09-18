@@ -75,7 +75,27 @@ public class BagWithRecieptsTest extends BagWithReciepts {
 
 	@Test
 	public void testSize() {
-		fail("Not yet implemented");
+		BagWithReciepts bag = new BagWithReciepts();
+
+		bag.add("Jia");
+		bag.add("Hi");
+		bag.add("Jia");
+		assertEquals("size test for string:", 3, bag.size());
+		
+		bag.add(1);
+		bag.add(1);
+		bag.add(2);
+		assertEquals("size test for int:", 3, bag.size());
+		
+		bag.add(null);
+		bag.add(null);
+		bag.add(null);
+		assertEquals("size test for null:", 0, bag.size());
+
+		
+
+		
+		
 	}
 
 	@Test
