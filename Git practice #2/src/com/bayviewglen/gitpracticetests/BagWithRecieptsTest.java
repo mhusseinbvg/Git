@@ -1,4 +1,6 @@
 package com.bayviewglen.gitpracticetests;
+import com.bayviewglen.gitpractice.BagWithReciepts;
+
 
 import static org.junit.Assert.*;
 
@@ -25,7 +27,14 @@ public class BagWithRecieptsTest extends BagWithReciepts {
 
 	@Test
 	public void testCountOccurrences() {
-		fail("Not yet implemented");
+		BagWithReciepts bag = new BagWithReciepts();
+		bag.add("Jia");
+		bag.add("Hi");
+		bag.add("Jia");
+		assertEquals("Occurences test for string:", 2, bag.countOccurrences("Jia"));
+
+		
+		
 	}
 
 	@Test
