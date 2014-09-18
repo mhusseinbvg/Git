@@ -17,8 +17,22 @@ public class BagWithRecieptsTest extends BagWithReciepts {
 
 	@Test
 	public void testAdd() {
-		fail("Not yet implemented");
+		BagWithReciepts bag = new BagWithReciepts();
+		bag.add("Jia");
+		bag.add("Hi");
+		bag.add("Jia");
+		
+		assertEquals("add test for string:", 3, bag.size());
+		
+		bag.add(1);
+		bag.add(2);
+		bag.add(3);
+		
+		assertEquals("add test for int:", 3, bag.size());
+
+
 	}
+	
 
 	@Test
 	public void testClone() {
