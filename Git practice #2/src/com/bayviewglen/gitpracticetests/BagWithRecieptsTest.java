@@ -88,6 +88,7 @@ public class BagWithRecieptsTest extends BagWithReciepts {
 
 		assertEquals("Remove test:", 3 , bag.size());
 		
+		
 		bag.add(1);
 		bag.add(2);
 		bag.add(3);
@@ -101,7 +102,29 @@ public class BagWithRecieptsTest extends BagWithReciepts {
 
 	@Test
 	public void testRemove_by_receipt() {
-		fail("Not yet implemented");
+		BagWithReciepts bag = new BagWithReciepts();
+		bag.add("Jia");
+		bag.add("Hi");
+		bag.add("Jia");
+		bag.add("Jia");
+		bag.remove_by_receipt(1);
+
+		assertEquals("Remove test:", 3 , bag.size());
+		assertEquals(" removing:", new int[]{2,3,4}, bag.receipts());
+
+		
+		bag.add(1);
+		bag.add(2);
+		bag.add(3);
+		bag.add(4);
+		bag.remove(3);
+		bag.remove_by_receipt(1);
+
+		
+
+		assertEquals("Remove test:", 3 , bag.size());
+		assertEquals(" removing:", new int[]{2,3,4}, bag.receipts());
+
 	}
 
 	@Test
