@@ -129,7 +129,21 @@ public class BagWithRecieptsTest extends BagWithReciepts {
 
 	@Test
 	public void testRetrieve() {
-		fail("Not yet implemented");
+		BagWithReciepts bag = new BagWithReciepts();
+		bag.add("Jia");
+		bag.add("Hi");
+		bag.add("Jia");
+		bag.add("Jia");
+		assertEquals(" retrieving:","Hi", bag.retrieve(2));
+		
+		bag.add("Jia");
+		bag.add(1);
+		bag.add("Jia");
+		bag.add("Jia");
+		assertEquals(" retrieving int:","Hi", bag.retrieve(2));
+
+
+		
 	}
 
 	@Test
