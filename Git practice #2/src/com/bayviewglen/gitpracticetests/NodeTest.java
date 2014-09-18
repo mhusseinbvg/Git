@@ -12,7 +12,8 @@ public class NodeTest extends Node {
 		super(initialData, initialLink);
 		// TODO Auto-generated constructor stub
 	}
-
+	// something needs to be done
+	//Alex was here
 	@Test
 	public void testNode() {
 		fail("Not yet implemented");
