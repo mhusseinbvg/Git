@@ -55,12 +55,48 @@ public class BagWithRecieptsTest extends BagWithReciepts {
 
 	@Test
 	public void testReceipts() {
-		fail("Not yet implemented");
+		BagWithReciepts bag = new BagWithReciepts();
+		bag.add("Jia");
+		bag.add("Hi");
+		bag.add("Jia");
+		assertEquals("Receipts test with no removing:", new int[]{1,2,3}, bag.receipts());
+		
+		bag.add("Jia");
+		bag.add("Jia");
+		bag.add("Hi");
+		bag.add("Jia");
+		bag.remove("Jia"); 
+		assertEquals("Receipts test with no removing:", new int[]{2,3,4}, bag.receipts());
+		
+		bag.add("Jia");
+		bag.add("Jia");
+		bag.add("Hi");
+		bag.add("Jia");
+	
+
+
 	}
 
 	@Test
 	public void testRemove() {
-		fail("Not yet implemented");
+		BagWithReciepts bag = new BagWithReciepts();
+		bag.add("Jia");
+		bag.add("Hi");
+		bag.add("Jia");
+		bag.add("Jia");
+		bag.remove("Jia");
+
+		assertEquals("Remove test:", 3 , bag.size());
+		
+		bag.add(1);
+		bag.add(2);
+		bag.add(3);
+		bag.add(4);
+		bag.remove(3);
+
+		assertEquals("Remove test:", 3 , bag.size());
+
+
 	}
 
 	@Test
